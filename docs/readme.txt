@@ -24,7 +24,7 @@ keyboard driver
 Run these in two separate terminals. Use keys i, j, k, l, m
 in the terminal where keyboard driver is running to control the bot
 
-If you want to try out a maze with the robot, roslaunch world.launch from description
+If you want to try out a maze with the robot, roslaunch steer_maze.launch from simulation
 
 Don't forget to source the setup.bash file in every terminal you open!
 
