@@ -1,0 +1,8 @@
+prefix=/home/raghav/IEEE_sample_bot/devel
+
+Name: control
+Description: Description of control
+Version: 0.0.0
+Cflags: -I/home/raghav/IEEE_sample_bot/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

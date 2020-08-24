@@ -1,0 +1,8 @@
+prefix=/home/raghav/IEEE_sample_bot/devel
+
+Name: description
+Description: Description of description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

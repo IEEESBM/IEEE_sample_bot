@@ -180,14 +180,31 @@
   <xacro:wheel left_right="right" front_back="front" relx="1" rely="-1"/>
 
   <!-- SETTING UP THE PLUGIN FOR FOUR WHEEL DIFFERENTIAL -->
-  <gazebo>
+  <!-- <gazebo>
     <plugin name="four_wheel_differential_plugin" filename="/home/raghav/IEEE_sample_bot/devel/lib/libfour_wheel_differential_plugin.so">
       <front_left_joint>left_front_wheel_to_base_link</front_left_joint>
       <back_left_joint>left_back_wheel_to_base_link</back_left_joint>
       <front_right_joint>right_front_wheel_to_base_link</front_right_joint>
       <back_right_joint>right_back_wheel_to_base_link</back_right_joint>
     </plugin>
-  </gazebo>
+  </gazebo> -->
+
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>left_front_wheel_to_base_link</leftFrontJoint>
+      <rightFrontJoint>right_front_wheel_to_base_link</rightFrontJoint>
+      <leftRearJoint>left_back_wheel_to_base_link</leftRearJoint>
+      <rightRearJoint>right_back_wheel_to_base_link</rightRearJoint>
+      <wheelSeparation>${base_width}</wheelSeparation>
+      <wheelDiameter>${wheel_dia}</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <torque>3</torque>
+      <topicName>cmd_vel</topicName>
+      <broadcastTF>true</broadcastTF>
+    </plugin>
+</gazebo>
 
   <!-- CREATNG AN INSTANNCE OF A CAMERA -->
   <xacro:camera parent_link="base_link" name="${camera_link_name}" camera_size="${camera_size}" camera_mass="${camera_mass}" joint_x="${base_length/4}" joint_y="0" joint_z="${wheel_dia+base_height+camera_size/2}"/>

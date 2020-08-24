@@ -1,0 +1,8 @@
+prefix=/home/raghav/IEEE_sample_bot/install
+
+Name: simulation
+Description: Description of simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
