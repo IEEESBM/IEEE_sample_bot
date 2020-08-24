@@ -1,2 +1,0 @@
-control:description:mastering_ros_robot_description_pkg:simulation
--DCATKIN_DEVEL_PREFIX=/home/raghav/IEEE_sample_bot/devel -DCMAKE_INSTALL_PREFIX=/home/raghav/IEEE_sample_bot/install -G Unix Makefiles

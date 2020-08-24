@@ -1,8 +1,0 @@
-prefix=/home/raghav/IEEE_sample_bot/install
-
-Name: control
-Description: Description of control
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime
