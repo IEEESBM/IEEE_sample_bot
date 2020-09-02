@@ -28,5 +28,11 @@ If you want to try out a maze with the robot, roslaunch steer_maze.launch from s
 
 Don't forget to source the setup.bash file in every terminal you open!
 
+SLAM_GMAPPING 
+in src/mapping launch , the g_mapping.launch file will spawn a slam_gmapping node for SLAM it subscribes from the /tf and laser sensor data and publishes to /map topic
+
+AMCL 
+Check in simulation/launch , simulation/param and simulation/src 
+
 
 Mazze karo
