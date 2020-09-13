@@ -153,7 +153,7 @@ rosrun g_mapping g_mapping.launch
 ```
 Once you run this code , the  `/slam_gmapping` node will be started and the rqt_graph will be as follows:
 
-![rqt_graph](3.png)
+![rqt_graph](6.png)
 
 As you can see in the above image the `/slam_gmapping` node is subscribing to the topics `/IEEE_sample_bot/laser/scan` and the `/tf_static` topics. Where the `tf` basically transforms from odom->base link(pose_data) which helps the `/slam_gmapping` node to make a 2D Map.
 
@@ -193,10 +193,10 @@ The .pgm file looks something like this:
 ![](5.png)
 
 This is the image of RVIZ where we use teleop twist keyboard to move the bot and the real-time map is shown in RVIZ.
-![](4.png)
+![](3.png)
 
 This is the Gazebo environment showing the world:
-![](6.png)
+![](4.png)
 
 # ADAPTIVE MONTE-CARLO LOCALISATION (AMCL)
 
