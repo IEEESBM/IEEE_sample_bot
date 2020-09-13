@@ -190,10 +190,10 @@ free_thresh: 0.196
 Note: This is just for the example, we have used jackal_race world and thus the corresponding map.
 
 The .pgm file looks something like this:
-![](4.png)
+![](5.png)
 
 This is the image of RVIZ where we use teleop twist keyboard to move the bot and the real-time map is shown in RVIZ.
-![](5.png)
+![](4.png)
 
 This is the Gazebo environment showing the world:
 ![](6.png)
